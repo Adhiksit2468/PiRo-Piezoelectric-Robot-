@@ -31,3 +31,20 @@ plt.xlabel("Force (N)")
 plt.ylabel("Power (W)")
 plt.grid()
 plt.show()
+
+
+dt = t[1] - t[0]
+
+# energy per step
+energy_in = power * dt
+
+# supercapacitor storage simulation
+stored_energy = np.cumsum(energy_in)
+
+plt.figure()
+plt.plot(t, stored_energy)
+plt.title("PiRo Supercapacitor Energy Storage Over Time")
+plt.xlabel("Time (s)")
+plt.ylabel("Stored Energy (J)")
+plt.grid()
+plt.show()
