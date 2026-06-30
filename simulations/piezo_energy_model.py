@@ -3,7 +3,9 @@
 import numpy as np
 
 # Parameters (simplified assumptions)
-force = np.linspace(0, 10, 100)  # N (fluid-induced force)
+t = np.linspace(0, 10, 200)
+
+force = 5 * np.sin(2 * np.pi * 0.5 * t) + 2 * np.random.randn(200)  # N (fluid-induced force)
 d = 2e-12  # piezoelectric coefficient (C/N)
 
 # Charge generated
@@ -23,7 +25,7 @@ print("Max Power (W):", np.max(power))
 
 import matplotlib.pyplot as plt
 
-plt.plot(force, power)
+plt.plot(t, power)
 plt.title("PiRo Piezoelectric Power Output vs Force")
 plt.xlabel("Force (N)")
 plt.ylabel("Power (W)")
