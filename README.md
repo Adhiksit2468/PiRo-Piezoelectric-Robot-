@@ -67,4 +67,4 @@ Conceptual research and early-stage system modeling.
 
 ## PiRo Internal System Layout
 
-![PiRo Internal Layout](cad/piro_annotated_system.png)
+![PiRo Internal Layout](cad/PiRo_labelled_design.png)
