@@ -20,7 +20,7 @@ To evaluate piezoelectric energy harvesting as a **battery-assist system**, not 
 
 ## System Overview
 
-![System Diagram](../assets/piro_system.png)
+![System Diagram](assets/piro_system.png)
 
 ---
 
