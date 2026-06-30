@@ -54,3 +54,13 @@ E = ½ C V²
 ## Status
 
 Conceptual research and early-stage system modeling.
+
+---
+
+## Results
+
+### Piezoelectric Power Output
+![Power Output](results/power_output.png)
+
+### Energy Storage (Supercapacitor Model)
+![Energy Storage](results/energy_storage.png)
