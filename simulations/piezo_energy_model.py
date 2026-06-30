@@ -1,45 +1,44 @@
 # PiRo Piezoelectric Energy Model (Simplified)
 
 import numpy as np
+import matplotlib.pyplot as plt
 
-# Parameters (simplified assumptions)
 t = np.linspace(0, 10, 200)
 
-force = 5 * np.sin(2 * np.pi * 0.5 * t) + 2 * np.random.randn(200)  # N (fluid-induced force)
-d = 2e-12  # piezoelectric coefficient (C/N)
+force = 5 * np.sin(2 * np.pi * 0.5 * t) + 2 * np.random.randn(200)
+d = 2e-12
 
-# Charge generated
-Q = d * force  # Coulombs
-
-# Voltage approximation (assume small capacitance)
-C = 1e-6  # Farads
+Q = d * force
+C = 1e-6
 V = Q / C
 
-# Power estimation (very simplified)
-frequency = 2  # Hz (wave motion)
+frequency = 2
 energy_per_cycle = 0.5 * C * V**2
 power = energy_per_cycle * frequency
 
+efficiency = 0.1
+power_real = power * efficiency
+
 print("Max Voltage:", np.max(V))
-print("Max Power (W):", np.max(power))
+print("Max Power (W):", np.max(power_real))
 
-import matplotlib.pyplot as plt
-
-plt.plot(t, power)
-plt.title("PiRo Piezoelectric Power Output vs Force")
-plt.xlabel("Force (N)")
+plt.plot(t, power_real)
+plt.title("PiRo Piezoelectric Power Output Over Time")
+plt.xlabel("Time (s)")
 plt.ylabel("Power (W)")
 plt.grid()
 plt.show()
 
-
 dt = t[1] - t[0]
-
 # energy per step
-energy_in = power * dt
+energy_in = power_real * dt
 
 # supercapacitor storage simulation
-stored_energy = np.cumsum(energy_in)
+loss_factor = 0.98  # small continuous leakage
+stored_energy = np.zeros_like(energy_in)
+
+for i in range(1, len(energy_in)):
+    stored_energy[i] = stored_energy[i-1] * loss_factor + energy_in[i]
 
 plt.figure()
 plt.plot(t, stored_energy)
