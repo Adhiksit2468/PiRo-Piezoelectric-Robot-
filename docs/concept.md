@@ -34,3 +34,7 @@ E = (1/2)CV^2
 PiRo is best understood as a hybrid energy-assisted underwater robot, where piezoelectric harvesting extends battery life rather than replaces it entirely.
 # 9. Engineering Conclusion
 The system is physically feasible as an energy scavenging enhancement layer but not as a standalone perpetual energy system. It can support low-power sensing and intermittent operation, not continuous propulsion.
+
+## System Architecture Diagram
+
+![PiRo System Architecture](assets/piro_system.png)
