@@ -53,7 +53,7 @@ E = ½ C V²
 
 ## Status
 
-Conceptual research and early-stage system modeling.
+Conceptual design, analytical modelling, and preliminary computational simulation completed.
 
 ---
 
