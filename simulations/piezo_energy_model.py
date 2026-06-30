@@ -20,3 +20,12 @@ power = energy_per_cycle * frequency
 
 print("Max Voltage:", np.max(V))
 print("Max Power (W):", np.max(power))
+
+import matplotlib.pyplot as plt
+
+plt.plot(force, power)
+plt.title("PiRo Piezoelectric Power Output vs Force")
+plt.xlabel("Force (N)")
+plt.ylabel("Power (W)")
+plt.grid()
+plt.show()
