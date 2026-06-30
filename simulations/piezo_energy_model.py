@@ -2,6 +2,8 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
+import os
+os.makedirs("results", exist_ok=True)
 
 t = np.linspace(0, 10, 200)
 
@@ -27,6 +29,7 @@ plt.title("PiRo Piezoelectric Power Output Over Time")
 plt.xlabel("Time (s)")
 plt.ylabel("Power (W)")
 plt.grid()
+plt.savefig("results/power_output.png", dpi=300)
 plt.show()
 
 dt = t[1] - t[0]
@@ -46,4 +49,5 @@ plt.title("PiRo Supercapacitor Energy Storage Over Time")
 plt.xlabel("Time (s)")
 plt.ylabel("Stored Energy (J)")
 plt.grid()
+plt.savefig("results/energy_storage.png", dpi=300)
 plt.show()
