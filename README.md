@@ -45,9 +45,9 @@ E = ½ C V²
 
 - `concept.md` → Full technical explanation
 - `assets/` → System diagrams and visuals
-- `simulations/` → (future) physics / energy models
-- `cad/` → (future) mechanical design
-- `results/` → (future) experimental outputs
+- `simulations/` →  Python energy harvesting model
+- `cad/` →  mechanical concept and annotated layout
+- `results/` → simulation output graphs
 
 ---
 
