@@ -37,4 +37,4 @@ The system is physically feasible as an energy scavenging enhancement layer but 
 
 ## System Architecture Diagram
 
-![PiRo System Architecture](./assets/piro_system.png?raw=true)
+![PiRo System Architecture](https://raw.githubusercontent.com/Adhiksit2468/PiRo-Piezoelectric-Robot-/main/assets/piro_system.png)
