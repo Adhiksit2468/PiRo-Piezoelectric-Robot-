@@ -64,3 +64,7 @@ Conceptual research and early-stage system modeling.
 
 ### Energy Storage (Supercapacitor Model)
 ![Energy Storage](results/energy_storage.png)
+
+## PiRo Internal System Layout
+
+![PiRo Internal Layout](cad/piro_annotated_system.png)
