@@ -68,3 +68,11 @@ Conceptual research and early-stage system modeling.
 ## PiRo Internal System Layout
 
 ![PiRo Internal Layout](cad/PiRo_labelled_design.png)
+
+## Future Work
+
+- Physical prototype
+- Waterproof housing
+- Experimental validation
+- CFD analysis
+- Embedded electronics testing
