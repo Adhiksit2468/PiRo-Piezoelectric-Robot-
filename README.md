@@ -656,6 +656,20 @@ Conceptual design, analytical modelling, and preliminary computational simulatio
 
 ![PiRo Internal Layout](cad/PiRo_labelled_design.png)
 
+## System Overview
+
+![System Diagram](assets/piro_system.png)
+
+---
+
+## PIRO Energy System Architecture
+
+The following diagram illustrates the complete energy harvesting workflow employed by PIRO, beginning with hydrodynamic loading from underwater currents and ending with electrical energy delivery to the onboard electronics through intermediate power conditioning and storage stages.
+
+![PIRO Energy System Architecture](assets/piro_energy_system_architecture.png)
+
+---
+
 # Future Work & Research Directions
 
 The present work establishes the theoretical feasibility and engineering limitations of piezoelectric-assisted underwater propulsion. Future research will focus on improving the overall energy harvesting capability and validating the proposed architecture experimentally.
