@@ -482,7 +482,7 @@ under constant loading.
 Consequently,
 
 \[
-$ \frac{dQ}{dt} \approx 0 $
+$\frac{dQ}{dt} \approx 0$
 \]
 
 and no continuous electrical output is produced after the initial loading event.
