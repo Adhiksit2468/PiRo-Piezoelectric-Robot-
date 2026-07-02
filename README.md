@@ -205,9 +205,9 @@ where
 Assuming a small DC motor requiring
 
 \[
-```math
-P \(= 0.30\ \text{W} \%\%\)MAGIT_PARSER_PROTECT%%```
-
+$$
+P = 0.30\ \text{W}
+$$
 \]
 
 operating for
@@ -261,7 +261,9 @@ $E = \frac{1}{2}C \left( V_1^2 - V_2^2 \right)$
 Rearranging for capacitance,
 
 \[
-$C = \frac{2E}{V_1^2 - V_2^2}$
+$$
+C = \frac{2E}{V_1^2 - V_2^2}
+$$
 \]
 
 Using the previously calculated propulsion energy
