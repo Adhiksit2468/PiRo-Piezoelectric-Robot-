@@ -259,9 +259,7 @@ $E = \frac{1}{2}C \left( V_1^2 - V_2^2 \right)$
 Rearranging for capacitance,
 
 \[
-$$
-C = \frac{2E}{V_1^2 - V_2^2}
-$$
+$$ C = \frac{2E}{V_1^2 - V_2^2} $$
 \]
 
 Using the previously calculated propulsion energy
@@ -290,7 +288,7 @@ $$C=\frac{2(0.09)}{5^2-3^2}$$
 
 \[
 $$
-C=\frac{0.18}{25-9}
+C = \frac{0.18}{25 - 9}
 $$
 \]
 
