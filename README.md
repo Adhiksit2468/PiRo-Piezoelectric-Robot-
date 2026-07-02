@@ -91,7 +91,7 @@ While the piezoelectric effect first generates electrical charge, the resulting 
 The generated open-circuit voltage can be approximated by
 
 \[
-V = g_{31}t\sigma
+$V = g_{31}t\sigma$
 \]
 
 where
