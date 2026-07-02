@@ -567,7 +567,7 @@ The harvested electrical output is first accumulated within a small high-voltage
 
 Once sufficient energy has been collected, an energy-harvesting power management circuit efficiently transfers the stored energy into the primary parallel capacitor bank while minimizing conversion losses.
 
-The capacitor bank subsequently delivers the stored electrical energy to the propulsion motor in short-duration high-current bursts, enabling periodic oscillation of the robotic tail while maintaining a completely battery-independent propulsion system.
+The capacitor bank subsequently delivers the stored electrical energy to the propulsion motor in short-duration high-current bursts, enabling periodic oscillation of the robotic tail while while supporting a battery-minimized propulsion system and demonstrating the feasibility of piezoelectric-assisted underwater propulsion.
 
 # 10. Motor Energy Requirement and Capacitor Sizing
 
@@ -727,4 +727,4 @@ Planned experimental investigations include:
 
 The long-term objective of PiRo is not to completely replace conventional batteries, but to investigate the feasibility of autonomous underwater robots capable of harvesting ambient mechanical energy to supplement onboard power systems.
 
-Future generations of PiRo may combine multiple renewable energy sources—including piezoelectric, triboelectric, solar, and flow-induced harvesting—to develop highly efficient, low-maintenance underwater robotic platforms for long-duration environmental monitoring, marine exploration, and autonomous sensing applications.
+Future generations of PiRo may combine multiple renewable energy sources, including piezoelectric, triboelectric, solar, and flow-induced harvesting to develop highly efficient, low-maintenance underwater robotic platforms for long-duration environmental monitoring, marine exploration, and autonomous sensing applications.
