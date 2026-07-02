@@ -331,7 +331,7 @@ where
 Using the previously calculated propulsion energy
 
 \[
-$ E = 0.09\ \text{J} $
+$E = 0.09\ \text{J}$
 \]
 
 the recharge time can be estimated for several realistic harvesting scenarios.
@@ -429,7 +429,7 @@ Typical engineering values are
 Consequently,
 
 \[
-$ \eta_{total} \approx 5\%-15\% $
+$\eta_{total} \approx 5\% - 15\%$
 \]
 
 depending upon operating conditions and component selection.
@@ -613,7 +613,7 @@ where
 
 In practical operation, the capacitor is not discharged completely.
 
-Instead, the voltage decreases from an initial voltage \(V_1\) to a lower operating voltage \(V_2\).
+Instead, the voltage decreases from an initial voltage $V_1$ to a lower operating voltage $V_2$.
 
 The usable electrical energy is therefore
 
