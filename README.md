@@ -205,9 +205,7 @@ where
 Assuming a small DC motor requiring
 
 \[
-$$
-P = 0.30\ \text{W}
-$$
+$P = 0.30\ \text{W}$
 \]
 
 operating for
