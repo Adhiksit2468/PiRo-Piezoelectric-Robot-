@@ -205,9 +205,9 @@ where
 Assuming a small DC motor requiring
 
 \[
-$$
-P = 0.30\ \text{W}
-$$
+```math
+P \(= 0.30\ \text{W} \%\%\)MAGIT_PARSER_PROTECT%%```
+
 \]
 
 operating for
