@@ -656,12 +656,6 @@ Conceptual design, analytical modelling, and preliminary computational simulatio
 
 ![PiRo Internal Layout](cad/PiRo_labelled_design.png)
 
-## System Overview
-
-![System Diagram](assets/piro_system.png)
-
----
-
 ## PIRO Energy System Architecture
 
 The following diagram illustrates the complete energy harvesting workflow employed by PIRO, beginning with hydrodynamic loading from underwater currents and ending with electrical energy delivery to the onboard electronics through intermediate power conditioning and storage stages.
