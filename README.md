@@ -104,7 +104,8 @@ where
 For a representative piezoelectric ceramic,
 
 \[
-g_{31}=0.022\ \mathrm{Vm/N}
+$$g_{31}=0.022\ \mathrm{Vm/N}$$
+
 \]
 
 Assuming
@@ -112,25 +113,29 @@ Assuming
 - thickness
 
 \[
-t=3\times10^{-4}\ \mathrm{m}
+$t = 3 \times 10^{-4} \ \mathrm{m}$
+
 \]
 
 - stress variation
 
 \[
-\sigma=10^{5}\ \mathrm{N/m^2}
+$\sigma = 10^{5}\ \mathrm{N/m^2}$
 \]
 
 the estimated voltage becomes
 
 \[
-V=0.022\times3\times10^{-4}\times10^{5}
+$$
+V = 0.022 \times 3 \times 10^{-4} \times 10^{5}
+$$
+
 \]
 
 which gives
 
 \[
-V\approx0.66\ V
+$V \approx 0.66\ V$.
 \]
 
 This represents a moderate voltage generated from a significant mechanical loading cycle.
