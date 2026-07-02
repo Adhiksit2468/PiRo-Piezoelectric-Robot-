@@ -331,9 +331,7 @@ where
 Using the previously calculated propulsion energy
 
 \[
-$$
-E = 0.09\ \text{J}
-$$
+$ E = 0.09\ \text{J} $
 \]
 
 the recharge time can be estimated for several realistic harvesting scenarios.
@@ -347,9 +345,7 @@ $P = 2\ \text{mW} = 0.002\ \text{W}$
 \]
 
 \[
-$$
-t = \frac{0.09}{0.002} = 45\text{ s}
-$$
+$t = \frac{0.09}{0.002} = 45\text{ s}$
 \]
 
 Recharge time:
@@ -363,17 +359,11 @@ Recharge time:
 Average harvested power
 
 \[
-$$
-P=0.5\ \text{mW}=0.0005\ W
-$$
-
+$P = 0.5\ \text{mW} = 0.0005\ \text{W}$
 \]
 
 \[
-$$
-t = \frac{0.09}{0.0005} = 180\ \text{s}
-$$
-
+$t = \frac{0.09}{0.0005} = 180\ \text{s}$
 \]
 
 Recharge time:
@@ -391,9 +381,7 @@ $`P = 0.05\ \text{mW} = 0.00005\ \text{W}`$
 \]
 
 \[
-$$
-t = \frac{0.09}{0.00005} = 1800 \text{ s}
-$$
+$t = \frac{0.09}{0.00005} = 1800 \text{ s}$
 \]
 
 Recharge time:
@@ -419,15 +407,7 @@ Instead, energy passes through several stages, each introducing efficiency losse
 The overall system efficiency can be approximated as
 
 \[
-\eta_{total}
-=
-\eta_{piezo}
-\times
-\eta_{rectifier}
-\times
-\eta_{storage}
-\times
-\eta_{motor}
+$\eta_{total} = \eta_{piezo} \times \eta_{rectifier} \times \eta_{storage} \times \eta_{motor}$
 \]
 
 where
@@ -449,9 +429,7 @@ Typical engineering values are
 Consequently,
 
 \[
-\eta_{total}
-\approx
-5\%-15\%
+$ \eta_{total} \approx 5\%-15\% $
 \]
 
 depending upon operating conditions and component selection.
@@ -479,7 +457,7 @@ One of the fundamental engineering challenges in piezoelectric underwater energy
 Hydrostatic pressure increases with depth according to
 
 \[
-P=\rho gh
+$P = \rho gh$
 \]
 
 where
@@ -496,7 +474,7 @@ Since piezoelectric materials generate electrical charge only when subjected to 
 Mathematically,
 
 \[
-\frac{dF}{dt}\approx0
+$\frac{dF}{dt} \approx 0$
 \]
 
 under constant loading.
@@ -504,7 +482,7 @@ under constant loading.
 Consequently,
 
 \[
-\frac{dQ}{dt}\approx0
+$ \frac{dQ}{dt} \approx 0 $
 \]
 
 and no continuous electrical output is produced after the initial loading event.
@@ -649,7 +627,7 @@ $$
 C=\frac{2E}{V_1^2-V_2^2}
 $$
 
-This equation provides the minimum capacitance required to supply a specified amount of propulsion energy while allowing the capacitor voltage to decrease from \(V_1\) to \(V_2\).
+This equation provides the minimum capacitance required to supply a specified amount of propulsion energy while allowing the capacitor voltage to decrease from $V_1$ to $V_2$.
 
 Increasing the total capacitance increases the amount of energy that can be stored, thereby enabling longer propulsion bursts or multiple tail oscillations before recharging becomes necessary.
 
