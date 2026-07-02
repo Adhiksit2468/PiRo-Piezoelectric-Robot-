@@ -105,7 +105,6 @@ For a representative piezoelectric ceramic,
 
 \[
 $$g_{31}=0.022\ \mathrm{Vm/N}$$
-
 \]
 
 Assuming
@@ -114,7 +113,6 @@ Assuming
 
 \[
 $t = 3 \times 10^{-4} \ \mathrm{m}$
-
 \]
 
 - stress variation
@@ -126,9 +124,7 @@ $\sigma = 10^{5}\ \mathrm{N/m^2}$
 the estimated voltage becomes
 
 \[
-$$
-V = 0.022 \times 3 \times 10^{-4} \times 10^{5}
-$$
+$V = 0.022 \times 3 \times 10^{-4} \times 10^{5}$
 
 \]
 
