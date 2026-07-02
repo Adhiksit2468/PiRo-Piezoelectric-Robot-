@@ -55,11 +55,8 @@ E = ½ C V²
 
 ## Purpose
 
-This document presents the engineering principles, governing equations, physical limitations, and analytical calculations underlying PiRo (Piezoelectric Robot).
-
-Unlike the project overview in the README, this document focuses on the mathematical feasibility of piezoelectric energy harvesting for underwater robotic propulsion.
-
-The objective is to investigate whether mechanical deformation induced by underwater flow can be converted into electrical energy, stored within a capacitor bank, and periodically discharged to power a low-power propulsion motor.
+This section presents the engineering principles, governing equations, physical limitations, and analytical calculations underlying PiRo (Piezoelectric Robot).
+It focuses on the mathematical feasibility of piezoelectric energy harvesting for underwater robotic propulsion.
 
 ---
 
