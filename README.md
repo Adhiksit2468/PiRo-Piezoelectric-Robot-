@@ -656,10 +656,75 @@ Conceptual design, analytical modelling, and preliminary computational simulatio
 
 ![PiRo Internal Layout](cad/PiRo_labelled_design.png)
 
-## Future Work
+# Future Work & Research Directions
 
-- Physical prototype
-- Waterproof housing
-- Experimental validation
-- CFD analysis
-- Embedded electronics testing
+The present work establishes the theoretical feasibility and engineering limitations of piezoelectric-assisted underwater propulsion. Future research will focus on improving the overall energy harvesting capability and validating the proposed architecture experimentally.
+
+## Mechanical Design
+
+- Optimize piezoelectric placement at regions of maximum structural strain
+- Investigate flexible composite body materials to amplify mechanical deformation
+- Design compliant internal structures for improved stress transmission
+- Develop modular piezoelectric arrays distributed throughout the robot body
+- Optimize tail geometry for greater energy harvesting during oscillation
+
+---
+
+## Power Electronics
+
+- Implement synchronous rectification to reduce diode losses
+- Integrate dedicated piezoelectric energy-harvesting ICs for improved conversion efficiency
+- Develop adaptive capacitor charging strategies
+- Investigate dynamic capacitor switching architectures
+- Reduce leakage currents and equivalent series resistance (ESR)
+
+---
+
+## Energy Storage
+
+- Evaluate different supercapacitor technologies
+- Optimize capacitor bank sizing for propulsion duty cycles
+- Investigate hybrid energy storage architectures combining capacitors and rechargeable micro-batteries
+- Improve charge-discharge management for higher overall system efficiency
+
+---
+
+## Propulsion System
+
+- Investigate ultra-low-power propulsion motors
+- Evaluate alternative propulsion mechanisms requiring lower instantaneous power
+- Optimize tail oscillation frequency for improved hydrodynamic efficiency
+- Minimize startup energy through lightweight drivetrain design
+
+---
+
+## Hydrodynamic Optimization
+
+- Perform Computational Fluid Dynamics (CFD) analysis of the robotic body
+- Investigate vortex-induced vibration as an additional energy harvesting mechanism
+- Optimize body geometry to maximize deformation under natural flow conditions
+- Analyze swimming efficiency under different aquatic environments
+
+---
+
+## Experimental Validation
+
+Future prototype development will focus on validating the theoretical analysis presented in this work through controlled laboratory testing.
+
+Planned experimental investigations include:
+
+- Piezoelectric voltage and current characterization
+- Capacitor charging experiments
+- Energy conversion efficiency measurements
+- Propulsion burst testing
+- Underwater waterproofing validation
+- Long-duration endurance testing
+- Flow tank and open-water experiments
+
+---
+
+## Long-Term Vision
+
+The long-term objective of PiRo is not to completely replace conventional batteries, but to investigate the feasibility of autonomous underwater robots capable of harvesting ambient mechanical energy to supplement onboard power systems.
+
+Future generations of PiRo may combine multiple renewable energy sources—including piezoelectric, triboelectric, solar, and flow-induced harvesting—to develop highly efficient, low-maintenance underwater robotic platforms for long-duration environmental monitoring, marine exploration, and autonomous sensing applications.
