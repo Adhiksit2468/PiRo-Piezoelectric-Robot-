@@ -20,7 +20,7 @@ Water motion → mechanical deformation → piezoelectric conversion → rectifi
 #### 5.2 Low power density: Typical piezoelectric harvesters generate micro-watt to milli-watt scale power, insufficient for propulsion.
 #### 5.3 Efficiency losses: Energy conversion, rectification, storage, and motor inefficiencies significantly reduce usable output.
 Efficiency estimate:
-Total efficiency ≈ 5% to 15% in realistic systems.
+Total efficiency ≈ 15% to 40% in realistic systems.
 
 # 6. Energy vs Propulsion Mismatch
 
