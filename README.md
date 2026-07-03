@@ -142,11 +142,9 @@ which gives
 $V \approx 0.66\ V$.
 \]
 
-This represents a moderate voltage generated from a significant mechanical loading cycle.
+This represents a moderate voltage generated under the representative loading conditions considered in this analysis. Higher transient voltages may be achievable under stronger dynamic loading or resonant excitation, although this requires experimental validation.
 
-Under stronger dynamic bending or resonance conditions, voltage peaks of approximately **2–10 V** may be produced for very short durations.
-
-It is important to note that although the voltage may be relatively high, the available current remains extremely small. Consequently, the electrical energy contained within each pulse is limited, requiring intermediate energy storage before useful work can be performed.
+However, even if higher voltages are achieved, the available current remains extremely small. Consequently, the electrical energy contained within each pulse is limited, requiring intermediate energy storage before useful work can be performed.
 
 ---
 
@@ -191,7 +189,7 @@ Consequently,
 - leakage currents become increasingly important,
 - useful electrical energy is accumulated less efficiently.
 
-For this reason, PiRo adopts a two-stage energy storage philosophy consisting of a small high-voltage buffer followed by a larger energy storage capacitor bank rather than directly connecting a very large capacitor to the piezoelectric source.
+For this reason, PiRo proposes a two-stage energy storage architecture consisting of a small high-voltage buffer capacitor followed by a larger energy storage capacitor bank, rather than directly connecting a large capacitor to the piezoelectric source.
 
 ---
 
@@ -240,7 +238,7 @@ of stored electrical energy.
 In contrast, a practical underwater piezoelectric harvester typically produces electrical power on the order of
 
 \[
-$0.01\text{--}0.10 \text{ W}$
+$0.0005\text{--}0.005 \text{ W}$
 \]
 
 under favorable dynamic loading conditions.
@@ -249,7 +247,7 @@ This creates a significant power mismatch between harvested energy and propulsio
 
 Consequently, continuous motor operation cannot be achieved solely through direct piezoelectric harvesting.
 
-Instead, PiRo adopts an intermittent propulsion strategy in which electrical energy is accumulated gradually within a capacitor bank and discharged periodically to produce short propulsion bursts.
+Instead, PiRo proposes an intermittent propulsion strategy in which electrical energy is accumulated gradually within a capacitor bank and discharged periodically to produce short propulsion bursts.
 
 This approach allows the harvested energy to be utilized more efficiently while remaining consistent with the physical limitations of piezoelectric energy harvesting.
 
@@ -259,7 +257,7 @@ This approach allows the harvested energy to be utilized more efficiently while 
 
 Once the energy required for a propulsion pulse is known, the storage capacitance can be estimated using the capacitor energy equation.
 
-When the capacitor discharges from an initial voltage \(V_1\) to a final voltage \(V_2\), the usable electrical energy is
+When the capacitor discharges from an initial voltage $V_1$ to a final voltage $V_1$, the usable electrical energy is
 
 \[
 $E = \frac{1}{2}C \left( V_1^2 - V_2^2 \right)$
@@ -343,7 +341,7 @@ Using the previously calculated propulsion energy
 $E = 0.09\ \text{J}$
 \]
 
-the recharge time can be estimated for several realistic harvesting scenarios.
+the recharge time can be estimated for several assumed harvesting scenarios.
 
 ### Case 1 — Optimistic Harvesting
 
@@ -421,10 +419,11 @@ $\eta_{total} = \eta_{piezo} \times \eta_{rectifier} \times \eta_{storage} \time
 
 where
 
-- **ηₚᵢₑ𝓏ₒ** = piezoelectric conversion efficiency
-- **ηᵣₑcₜᵢfᵢₑᵣ** = rectification efficiency
-- **ηₛₜₒᵣₐgₑ** = capacitor storage efficiency
+- **$\eta_{\text{piezo}}$** = piezoelectric conversion efficiency
+- **$$ \eta_{\text{rectifier}} $$** = rectification efficiency
+- **$$\eta_{storage}$$** = capacitor storage efficiency
 - **ηₘₒₜₒᵣ** = motor efficiency
+
 
 Typical engineering values are
 
@@ -438,7 +437,7 @@ Typical engineering values are
 Consequently,
 
 \[
-$\eta_{total} \approx 5\% - 15\%$
+$\eta_{total} \approx 15\% - 40\%$
 \]
 
 depending upon operating conditions and component selection.
@@ -461,7 +460,7 @@ Improving overall efficiency remains an important objective for future prototype
 
 # 8. Static Hydrostatic Pressure and Dynamic Mechanical Stress
 
-One of the fundamental engineering challenges in piezoelectric underwater energy harvesting is the distinction between static hydrostatic pressure and dynamic mechanical deformation.
+One of the fundamental physical principles in piezoelectric underwater energy harvesting is the distinction between static hydrostatic pressure and dynamic mechanical deformation.
 
 Hydrostatic pressure increases with depth according to
 
@@ -570,13 +569,13 @@ $$
 
 This relationship demonstrates that simply increasing capacitance does not necessarily improve the efficiency of energy harvesting, since larger capacitances require significantly longer charging durations.
 
-To maximize harvesting efficiency, PIRO employs a two-stage energy storage architecture.
+To improve harvesting efficiency, PIRO employs a two-stage energy storage architecture.
 
 The harvested electrical output is first accumulated within a small high-voltage buffer capacitor.
 
 Once sufficient energy has been collected, an energy-harvesting power management circuit efficiently transfers the stored energy into the primary parallel capacitor bank while minimizing conversion losses.
 
-The capacitor bank subsequently delivers the stored electrical energy to the propulsion motor in short-duration high-current bursts, enabling periodic oscillation of the robotic tail while while supporting a battery-minimized propulsion system and demonstrating the feasibility of piezoelectric-assisted underwater propulsion.
+The capacitor bank subsequently delivers the stored electrical energy to the propulsion motor in short-duration high-current bursts, enabling periodic oscillation of the robotic tail while supporting a battery-minimized propulsion system and demonstrating the feasibility of piezoelectric-assisted underwater propulsion.
 
 # 10. Motor Energy Requirement and Capacitor Sizing
 
