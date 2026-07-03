@@ -257,7 +257,7 @@ This approach allows the harvested energy to be utilized more efficiently while 
 
 Once the energy required for a propulsion pulse is known, the storage capacitance can be estimated using the capacitor energy equation.
 
-When the capacitor discharges from an initial voltage $V_1$ to a final voltage $V_1$, the usable electrical energy is
+When the capacitor discharges from an initial voltage $V_1$ to a final voltage $V_2$, the usable electrical energy is
 
 \[
 $E = \frac{1}{2}C \left( V_1^2 - V_2^2 \right)$
@@ -422,7 +422,7 @@ where
 - **$\eta_{\text{piezo}}$** = piezoelectric conversion efficiency
 - **$\eta_{\text{rectifier}}$** = rectification efficiency
 - **$$\eta_{storage}$$** = capacitor storage efficiency
-- **ηₘₒₜₒᵣ** = motor efficiency
+- **$\eta_{\text{motor}}$** = motor efficiency
 
 
 Typical engineering values are
