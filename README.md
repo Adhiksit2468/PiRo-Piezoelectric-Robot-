@@ -420,7 +420,7 @@ $\eta_{total} = \eta_{piezo} \times \eta_{rectifier} \times \eta_{storage} \time
 where
 
 - **$\eta_{\text{piezo}}$** = piezoelectric conversion efficiency
-- **$ \eta_{\text{rectifier}} $** = rectification efficiency
+- **$\eta_{\text{rectifier}}$** = rectification efficiency
 - **$$\eta_{storage}$$** = capacitor storage efficiency
 - **ηₘₒₜₒᵣ** = motor efficiency
 
