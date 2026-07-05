@@ -1,12 +1,3 @@
-© 2026 Adhiksit
-
-This repository contains original conceptual research, engineering analysis, simulations, and documentation developed by the author.
-
-No part of this work may be reproduced, modified, redistributed, or used for commercial purposes without prior written permission.
-
-This repository is publicly accessible for educational and evaluation purposes only.
-
----
 # PiRo (Piezoelectric Robot)
 
 PiRo is a conceptual underwater robotic fish exploring piezoelectric energy harvesting as an auxiliary power mechanism for low-power marine robotics.
