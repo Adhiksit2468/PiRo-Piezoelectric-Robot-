@@ -1,8 +1,10 @@
 # PiRo (Piezoelectric Robot)
 
-PiRo is a conceptual underwater robotic fish exploring piezoelectric energy harvesting as an auxiliary power mechanism for low-power marine robotics.
+PiRo is a conceptual underwater robotic fish that investigates how ambient underwater mechanical energy can be harvested and integrated into the onboard power architecture of autonomous underwater robots.
 
-The project investigates whether mechanical energy from fluid motion and structural deformation can be partially converted into electrical energy and stored in supercapacitors to extend operational lifetime of autonomous underwater systems.
+Rather than proposing fully battery-free propulsion, PiRo explores a systems-level energy architecture in which piezoelectric energy harvesting, staged energy storage, and power conditioning work together to supplement onboard power systems while quantitatively evaluating the opportunities and limitations of current piezoelectric harvesting technology.
+
+The project investigates whether mechanical energy produced by underwater flow and structural deformation can be converted into electrical energy, conditioned, stored within supercapacitors, and utilised to improve the energy efficiency and operational endurance of future autonomous underwater systems.
 
 ---
 
@@ -51,6 +53,46 @@ E = ½ C V²
 
 ---
 
+## Comparison with Existing Literature
+
+| Aspect | Existing Research | PiRo |
+|:-------|:------------------|:------|
+| Primary objective | Piezoelectric harvesting, robotic fish locomotion, or underwater sensing | System-level underwater energy architecture |
+| Energy utilisation | Harvested energy typically powers sensors, electronics, or isolated demonstrations | Harvested energy is integrated into the complete onboard power architecture |
+| Power management | Often discussed independently | Harvesting, staged storage, power conditioning, and propulsion considered together |
+| Propulsion strategy | Continuous swimming or laboratory harvesting demonstrations | Intermittent burst propulsion based on accumulated harvested energy |
+| Energy storage | Usually limited discussion | Two-stage storage using a high-voltage buffer capacitor and primary capacitor bank |
+| Engineering scope | Optimisation of individual subsystems | Integrated system-level feasibility analysis |
+| Research objective | Improve specific harvesting or robotic subsystems | Investigate whether ambient underwater mechanical energy can realistically supplement onboard power systems while remaining consistent with current technological limitations |
+
+---
+
+---
+
+## Research Article references related to PiRo - 
+
+The conceptual development of PiRo was informed by existing research in underwater robotics, smart materials, and piezoelectric energy harvesting. The following publications provide useful background for readers interested in the engineering principles explored throughout this project.
+
+1. **Trout-like Multifunctional Piezoelectric Robotic Fish and Energy Harvester**  
+   https://iopscience.iop.org/article/10.1088/1748-3190/abf6f4
+
+2. **A Review of Robotic Fish Based on Smart Materials**  
+   https://www.mdpi.com/2313-7673/8/2/227
+
+3. **Piezoelectric Energy Harvesting: A Systematic Review of Reviews**  
+   https://arxiv.org/abs/2101.09312
+
+4. **Recent Advancement of Flow-Induced Piezoelectric Vibration Energy Harvesting Techniques**  
+   https://link.springer.com/article/10.1007/s10483-022-2867-7
+
+5. **Designs, Motion Mechanism, Motion Coordination, and Communication of Bionic Robot Fishes: A Survey**  
+   https://arxiv.org/abs/2206.15304
+
+Existing studies primarily investigate individual aspects of underwater robotics, including robotic locomotion, piezoelectric harvesting, smart materials, or energy harvesting devices independently.
+
+PiRo instead investigates how these established concepts can be integrated into a unified system-level underwater power architecture, quantitatively evaluating both the opportunities and engineering limitations of supplementing onboard power using ambient underwater mechanical energy.
+
+---
 # Engineering Analysis of PiRo
 
 ## Purpose
@@ -636,6 +678,21 @@ For PIRO, the capacitor bank therefore acts as an intermediate energy reservoir,
 
 This relationship establishes the direct mathematical connection between harvested piezoelectric energy, capacitor storage capacity, and the propulsion capability of the robotic fish.
 
+---
+
+---
+
+# Research Position
+
+PiRo does not propose a new piezoelectric material, actuator, propulsion mechanism, or claim fully battery-free underwater propulsion using current technology.
+
+Instead, PiRo investigates a **systems-level underwater power architecture** that integrates ambient mechanical energy harvesting, staged energy storage, power conditioning, and quantitative engineering analysis to evaluate whether harvested energy can realistically supplement the onboard power system of autonomous underwater robots.
+
+Rather than attempting to replace conventional batteries, PiRo explores how environmental mechanical energy may reduce net battery energy consumption and contribute toward longer-duration underwater operation while remaining consistent with the known physical limitations of present-day piezoelectric harvesting technology.
+
+The project therefore serves as an engineering framework that can evolve alongside future advances in smart materials, power electronics, ultra-low-power underwater robotics, and next-generation energy harvesting technologies.
+
+---
 
 ## Status
 
