@@ -708,8 +708,12 @@ The project therefore serves as an engineering framework that can evolve alongsi
 
 ## Status
 
-Conceptual design, analytical modelling, and preliminary computational simulation completed.
+- Conceptual architecture completed
+- Engineering analysis completed
+- Mathematical modelling completed
+- Preliminary simulations completed
 
+  
 ---
 
 ## Results
