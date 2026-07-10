@@ -20,6 +20,22 @@ To evaluate piezoelectric energy harvesting as a **battery-assist system**, not 
 
 ---
 
+## Table of Contents
+
+- [System Overview](#system-overview)
+- [Key Physical Constraints](#key-physical-constraints)
+- [Repository Structure](#repository-structure)
+- [Comparison with Existing Research](#comparison-with-existing-research)
+- [Related Research References](#related-research-references)
+- [Engineering Analysis of PiRo](#engineering-analysis-of-piro)
+- [Research Position](#research-position)
+- [Status](#status)
+- [Results](#results)
+- [PiRo Internal System Layout](#piro-internal-system-layout)
+- [Future Work & Research Directions](#future-work--research-directions)
+
+---
+
 ## System Overview
 
 ![System Diagram](assets/piro_system.png)
@@ -53,7 +69,7 @@ E = ½ C V²
 
 ---
 
-## Comparison with Existing Literature
+## Comparison with Existing Research
 
 | Aspect | Existing Research | PiRo |
 |:-------|:------------------|:------|
