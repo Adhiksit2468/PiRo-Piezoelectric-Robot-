@@ -8,12 +8,6 @@ The project investigates whether mechanical energy produced by underwater flow a
 
 ---
 
-## Key Idea
-
-Water motion → mechanical deformation → piezoelectric conversion → rectification → supercapacitor storage → low-power electronics
-
----
-
 ## Core Objective
 
 To evaluate piezoelectric energy harvesting as a **battery-assist system**, not a replacement, in underwater robotic applications.
@@ -215,26 +209,54 @@ This equation demonstrates that stored energy increases linearly with capacitanc
 
 However, increasing capacitance indefinitely is not always beneficial for piezoelectric energy harvesting.
 
-For a piezoelectric element producing a fixed amount of electrical charge, the voltage increase after each harvesting cycle is
+For PIRO, multiple capacitors are connected primarily in **parallel** since the total capacitance becomes
 
-\[
-$\Delta V = \frac{Q}{C}$
-\]
+$$
+C_{\text{total}}=C_1+C_2+\cdots+C_n
+$$
+
+A parallel capacitor bank offers several engineering advantages:
+
+- Increased total capacitance
+- Reduced equivalent series resistance (ESR)
+- Improved pulse-current delivery
+- Greater energy storage capability while maintaining the same operating voltage
+
+A lower ESR enables the capacitor bank to deliver the large instantaneous current required during motor startup, allowing the propulsion tail to initiate oscillation efficiently.
+
+However, connecting a large capacitor directly to the piezoelectric transducers is inefficient.
+
+Piezoelectric devices behave as high-impedance charge sources that generate relatively small packets of electrical charge during each deformation cycle.
+
+The voltage increase of a capacitor after receiving a charge packet is
+
+$$
+\Delta V=\frac{Q}{C}
+$$
 
 where
 
-- **ΔV** = voltage rise per harvesting cycle
-- **Q** = generated charge
-- **C** = storage capacitance
+- **ΔV** = voltage rise (V)
+- **Q** = electrical charge transferred (C)
+- **C** = capacitance (F)
 
-As the storage capacitance becomes larger, the voltage increase produced by each harvested charge packet becomes significantly smaller.
+As the capacitance increases, the voltage rise produced by each harvested charge packet decreases.
 
-Consequently,
+For a fixed amount of harvested charge, the stored energy is
 
-- charging becomes slower,
-- rectification losses become more significant,
-- leakage currents become increasingly important,
-- useful electrical energy is accumulated less efficiently.
+$$
+E=\frac{Q^2}{2C}
+$$
+
+This relationship demonstrates that simply increasing capacitance does not necessarily improve the efficiency of energy harvesting, since larger capacitances require significantly longer charging durations.
+
+To improve harvesting efficiency, PIRO employs a two-stage energy storage architecture.
+
+The harvested electrical output is first accumulated within a small high-voltage buffer capacitor.
+
+Once sufficient energy has been collected, an energy-harvesting power management circuit efficiently transfers the stored energy into the primary parallel capacitor bank while minimizing conversion losses.
+
+The capacitor bank subsequently delivers the stored electrical energy to the propulsion motor in short-duration high-current bursts, enabling periodic oscillation of the robotic tail while supporting a battery-minimized propulsion system and demonstrating the feasibility of piezoelectric-assisted underwater propulsion.
 
 For this reason, PiRo proposes a two-stage energy storage architecture consisting of a small high-voltage buffer capacitor followed by a larger energy storage capacitor bank, rather than directly connecting a large capacitor to the piezoelectric source.
 
@@ -300,69 +322,82 @@ This approach allows the harvested energy to be utilized more efficiently while 
 
 ---
 
-# 5. Capacitor Sizing for Propulsion
+## 5. Motor Energy Requirement and Capacitor Sizing
 
-Once the energy required for a propulsion pulse is known, the storage capacitance can be estimated using the capacitor energy equation.
+The electrical energy accumulated within the capacitor bank must be sufficient to power the propulsion motor during a propulsion burst.
 
-When the capacitor discharges from an initial voltage $V_1$ to a final voltage $V_2$, the usable electrical energy is
+The electrical power consumed by the motor is given by
 
-\[
-$E = \frac{1}{2}C \left( V_1^2 - V_2^2 \right)$
-\]
+$$
+P = VI
+$$
 
-Rearranging for capacitance,
+where
 
-\[
-$C = \frac{2E}{V_1^2 - V_2^2}$
-\]
+- **P** = electrical power (W)
+- **V** = operating voltage (V)
+- **I** = motor current (A)
+
+If the motor operates for a time interval **t**, the required electrical energy is
+
+$$
+E = Pt = VIt
+$$
+
+This represents the minimum electrical energy that must be available within the capacitor bank before propulsion can occur.
+
+The usable energy stored in a capacitor discharging from an initial voltage $V_1$ to a final voltage $V_2$ is
+
+$$
+E=\frac{1}{2}C\left(V_1^2-V_2^2\right)
+$$
+
+Rearranging for the required capacitance,
+
+$$
+C=\frac{2E}{V_1^2-V_2^2}
+$$
 
 Using the previously calculated propulsion energy
 
-\[
-$E = 0.09 \text{ J}$
-\]
+$$
+E=0.09\ \mathrm{J}
+$$
 
 and allowing the capacitor voltage to decrease from
 
-\[
-$V_1 = 5.0\ V$
-\]
+$$
+V_1=5.0\ \mathrm{V}
+$$
 
 to
 
-\[
-$V_2 = 3.0 \ \text{V}$
-\]
+$$
+V_2=3.0\ \mathrm{V}
+$$
 
 gives
 
-\[
-$$C=\frac{2(0.09)}{5^2-3^2}$$
-\]
-
-\[
-$C=\frac{0.18}{25-9}$
-\]
-
-\[
-$C=\frac{0.18}{16}$
-\]
-
-\[
-$C = 0.01125 \text{ F}$
-\]
+$$
+C=\frac{2(0.09)}{5^2-3^2}
+=\frac{0.18}{25-9}
+=\frac{0.18}{16}
+=0.01125\ \mathrm{F}
+$$
 
 or approximately
 
-\[
-$11.25\ \text{mF}$
-\]
+$$
+11.25\ \mathrm{mF}
+$$
 
-This value represents the theoretical minimum capacitance required to deliver one propulsion burst under ideal conditions.
+This value represents the theoretical minimum capacitance required to deliver a single propulsion burst under ideal conditions.
 
-In practice, additional capacitance is required to compensate for equivalent series resistance (ESR), switching losses, rectification losses, and motor startup current.
+In practice, additional capacitance is required to compensate for equivalent series resistance (ESR), rectification losses, switching losses, and motor startup current. Consequently, a practical PiRo prototype would likely employ a capacitor bank in the range of **10–50 mF**, depending on the propulsion system and desired burst duration.
 
-Consequently, a practical PiRo prototype would likely employ a capacitor bank in the range of **10–50 mF**, depending on the propulsion system and desired burst duration.
+The capacitor bank therefore acts as an intermediate energy reservoir, slowly accumulating electrical energy generated by the piezoelectric harvesters before rapidly releasing it to satisfy the comparatively high instantaneous power requirement of the propulsion motor. Increasing the total capacitance increases the available stored energy, enabling longer propulsion bursts or multiple tail oscillations before recharging becomes necessary, while higher propulsion energy requirements demand proportionally larger capacitor banks or longer harvesting durations.
+
+This relationship establishes the direct mathematical connection between harvested piezoelectric energy, capacitor storage capacity, and the propulsion capability of the robotic fish.
 
 ---
 
@@ -557,72 +592,7 @@ These continuously varying forces repeatedly deform the embedded piezoelectric e
 
 This distinction between static pressure and dynamic mechanical deformation represents one of the key physical principles governing the feasibility of piezoelectric underwater energy harvesting.
 
-# 9. Energy Storage Using Capacitor Banks
-
-The electrical energy generated by the piezoelectric transducers cannot be supplied directly to the propulsion motor because the generated output consists of high-voltage, low-current electrical pulses.
-
-Instead, the harvested electrical energy is temporarily accumulated within a capacitor bank until sufficient energy is available to drive the propulsion system.
-
-The electrical energy stored inside a capacitor is given by
-
-$$
-E=\frac{1}{2}CV^2
-$$
-
-where
-
-- **E** = stored electrical energy (J)
-- **C** = capacitance (F)
-- **V** = capacitor voltage (V)
-
-For PIRO, multiple capacitors are connected primarily in **parallel** since the total capacitance becomes
-
-$$
-C_{\text{total}}=C_1+C_2+\cdots+C_n
-$$
-
-A parallel capacitor bank offers several engineering advantages:
-
-- Increased total capacitance
-- Reduced equivalent series resistance (ESR)
-- Improved pulse-current delivery
-- Greater energy storage capability while maintaining the same operating voltage
-
-A lower ESR enables the capacitor bank to deliver the large instantaneous current required during motor startup, allowing the propulsion tail to initiate oscillation efficiently.
-
-However, connecting a large capacitor directly to the piezoelectric transducers is inefficient.
-
-Piezoelectric devices behave as high-impedance charge sources that generate relatively small packets of electrical charge during each deformation cycle.
-
-The voltage increase of a capacitor after receiving a charge packet is
-
-$$
-\Delta V=\frac{Q}{C}
-$$
-
-where
-
-- **ΔV** = voltage rise (V)
-- **Q** = electrical charge transferred (C)
-- **C** = capacitance (F)
-
-As the capacitance increases, the voltage rise produced by each harvested charge packet decreases.
-
-For a fixed amount of harvested charge, the stored energy is
-
-$$
-E=\frac{Q^2}{2C}
-$$
-
-This relationship demonstrates that simply increasing capacitance does not necessarily improve the efficiency of energy harvesting, since larger capacitances require significantly longer charging durations.
-
-To improve harvesting efficiency, PIRO employs a two-stage energy storage architecture.
-
-The harvested electrical output is first accumulated within a small high-voltage buffer capacitor.
-
-Once sufficient energy has been collected, an energy-harvesting power management circuit efficiently transfers the stored energy into the primary parallel capacitor bank while minimizing conversion losses.
-
-The capacitor bank subsequently delivers the stored electrical energy to the propulsion motor in short-duration high-current bursts, enabling periodic oscillation of the robotic tail while supporting a battery-minimized propulsion system and demonstrating the feasibility of piezoelectric-assisted underwater propulsion.
+---
 
 # 10. Motor Energy Requirement and Capacitor Sizing
 
