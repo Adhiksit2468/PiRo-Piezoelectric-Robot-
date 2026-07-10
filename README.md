@@ -4,7 +4,7 @@ PiRo is a conceptual underwater robotic fish that investigates how ambient under
 
 Rather than proposing fully battery-free propulsion, PiRo explores a systems-level energy architecture in which piezoelectric energy harvesting, staged energy storage, and power conditioning work together to supplement onboard power systems while quantitatively evaluating the opportunities and limitations of current piezoelectric harvesting technology.
 
-The project investigates whether mechanical energy produced by underwater flow and structural deformation can be converted into electrical energy, conditioned, stored within supercapacitors, and utilised to supplement onboard power systems and potentially improve the operational endurance of future autonomous underwater systems.
+The project investigates whether mechanical energy produced by underwater flow and structural deformation can be converted into electrical energy, conditioned, stored within supercapacitors, and utilised to supplement onboard power systems and exploring pathways towards improved operational endurance of future autonomous underwater systems.
 
 ---
 
@@ -83,7 +83,7 @@ E = ½ C V²
 
 ---
 
-## Related Research
+## Related Research References
 
 The conceptual development of PiRo was informed by existing research in underwater robotics, smart materials, and piezoelectric energy harvesting. The following publications provide useful background for readers interested in the engineering principles explored throughout this project.
 
