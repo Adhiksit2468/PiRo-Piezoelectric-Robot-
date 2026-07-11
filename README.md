@@ -20,7 +20,6 @@ To evaluate piezoelectric energy harvesting as a **battery-assist system**, not 
 - [Comparison with Existing Research](#comparison-with-existing-research)
 - [Related Research References](#related-research-references)
 - [Engineering Analysis of PiRo](#engineering-analysis-of-piro)
-- [Research Position](#research-position)
 - [Status](#status)
 - [Results](#results)
 - [PiRo Internal System Layout](#piro-internal-system-layout)
