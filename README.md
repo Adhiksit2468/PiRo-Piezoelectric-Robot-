@@ -103,8 +103,7 @@ PiRo instead investigates how these established concepts can be integrated into 
 
 ## Purpose
 
-This section presents the engineering principles, governing equations, physical limitations, and analytical calculations underlying PiRo (Piezoelectric Robot).
-It focuses on the mathematical feasibility of piezoelectric energy harvesting for underwater robotic propulsion.
+This section presents the governing equations, analytical calculations, and engineering constraints used to evaluate the feasibility of piezoelectric-assisted underwater propulsion.
 
 ---
 
@@ -179,7 +178,7 @@ which gives
 $V \approx 0.66\ V$.
 \]
 
-This represents a moderate voltage generated under the representative loading conditions considered in this analysis. Higher transient voltages may be achievable under stronger dynamic loading or resonant excitation, although this requires experimental validation.
+This represents a moderate voltage generated under the representative loading conditions considered in this analysis. 
 
 However, even if higher voltages are achieved, the available current remains extremely small. Consequently, the electrical energy contained within each pulse is limited, requiring intermediate energy storage before useful work can be performed.
 
@@ -463,9 +462,7 @@ Recharge time:
 
 ---
 
-These calculations demonstrate that continuous propulsion is generally not feasible using piezoelectric harvesting alone.
-
-However, intermittent propulsion becomes physically achievable by slowly accumulating energy within the capacitor bank.
+These estimates show that continuous propulsion is not feasible using present-day piezoelectric harvesting alone. However, intermittent propulsion becomes practical when harvested energy is accumulated and periodically released from the capacitor bank.
 
 Consequently, PiRo is best interpreted as a low-duty-cycle, energy-scavenging robotic platform rather than a continuously self-powered underwater vehicle.
 
@@ -508,7 +505,7 @@ $\eta_{total} \approx 15\% - 40\%$
 
 depending upon operating conditions and component selection.
 
-Major sources of energy loss include
+Major expected sources of energy loss include
 
 - bridge rectifier voltage drops,
 - leakage currents,
@@ -589,6 +586,9 @@ This distinction between static pressure and dynamic mechanical deformation repr
 ---
 
 ## Results
+
+Preliminary computational simulations illustrating representative piezoelectric power generation and capacitor charging behaviour using a simplified energy-harvesting model.
+
 
 ### Piezoelectric Power Output
 ![Power Output](results/power_output.png)
