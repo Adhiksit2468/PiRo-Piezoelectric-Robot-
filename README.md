@@ -587,7 +587,7 @@ This distinction between static pressure and dynamic mechanical deformation repr
 
 ## Results
 
-Preliminary computational simulations illustrating representative piezoelectric power generation and capacitor charging behaviour using a simplified energy-harvesting model.
+Preliminary computational simulations illustrating simulated piezoelectric power generation and capacitor charging behaviour using a simplified energy-harvesting model.
 
 
 ### Piezoelectric Power Output
