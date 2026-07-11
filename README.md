@@ -1,10 +1,8 @@
 # PiRo (Piezoelectric Robot)
 
-PiRo is a conceptual underwater robotic fish that investigates how ambient underwater mechanical energy can be harvested and integrated into the onboard power architecture of autonomous underwater robots.
+PiRo is a conceptual underwater robotic fish aimed at studying whether ambient underwater mechanical energy can be harvested using distributed piezoelectric transducers, two-stage energy storage, and intermittent propulsion to supplement the onboard battery-assisted power system of autonomous underwater robots.
 
-Rather than proposing fully battery-free propulsion, PiRo explores a systems-level energy architecture in which piezoelectric energy harvesting, staged energy storage, and power conditioning work together to supplement onboard power systems while quantitatively evaluating the opportunities and limitations of current piezoelectric harvesting technology.
-
-The project investigates whether mechanical energy produced by underwater flow and structural deformation can be converted into electrical energy, conditioned, stored within supercapacitors, and utilised to supplement onboard power systems and exploring pathways towards improved operational endurance of future autonomous underwater systems.
+Rather than proposing fully battery-free propulsion, PiRo evaluates how harvested mechanical energy may improve the operational endurance of underwater robotic systems while remaining consistent with present-day physical limitations and engineering constraints.
 
 ---
 
@@ -126,9 +124,7 @@ where
 - **d** = piezoelectric charge coefficient (C/N)
 - **F** = applied mechanical force (N)
 
-This relationship shows that electrical charge is directly proportional to the applied mechanical force.
-
-For PiRo, the mechanical loading originates from underwater flow, turbulence, oscillatory body deformation, and tail flexure rather than static compression.
+For PiRo, the mechanical energy originates from underwater flow, turbulence, oscillatory body deformation, and tail flexure rather than static compression.
 
 Therefore, continuous electrical generation depends on continuously changing mechanical stress rather than constant pressure.
 
@@ -205,10 +201,6 @@ where
 - **C** = capacitance (F)
 - **V** = capacitor voltage (V)
 
-This equation demonstrates that stored energy increases linearly with capacitance and quadratically with voltage.
-
-However, increasing capacitance indefinitely is not always beneficial for piezoelectric energy harvesting.
-
 For PIRO, multiple capacitors are connected primarily in **parallel** since the total capacitance becomes
 
 $$
@@ -240,25 +232,21 @@ where
 - **Q** = electrical charge transferred (C)
 - **C** = capacitance (F)
 
-As the capacitance increases, the voltage rise produced by each harvested charge packet decreases.
-
 For a fixed amount of harvested charge, the stored energy is
 
 $$
 E=\frac{Q^2}{2C}
 $$
 
-This relationship demonstrates that simply increasing capacitance does not necessarily improve the efficiency of energy harvesting, since larger capacitances require significantly longer charging durations.
+These relationships demonstrate that simply increasing capacitance does not necessarily improve the efficiency of energy harvesting, since larger capacitances require significantly longer charging durations.
 
-To improve harvesting efficiency, PIRO employs a two-stage energy storage architecture.
+To improve harvesting efficiency, PIRO proposes a two-stage energy storage architecture consisting of a small high-voltage buffer capacitor followed by a larger energy storage capacitor bank, rather than directly connecting a large capacitor to the piezoelectric source.
 
 The harvested electrical output is first accumulated within a small high-voltage buffer capacitor.
 
 Once sufficient energy has been collected, an energy-harvesting power management circuit efficiently transfers the stored energy into the primary parallel capacitor bank while minimizing conversion losses.
 
-The capacitor bank subsequently delivers the stored electrical energy to the propulsion motor in short-duration high-current bursts, enabling periodic oscillation of the robotic tail while supporting a battery-minimized propulsion system and demonstrating the feasibility of piezoelectric-assisted underwater propulsion.
-
-For this reason, PiRo proposes a two-stage energy storage architecture consisting of a small high-voltage buffer capacitor followed by a larger energy storage capacitor bank, rather than directly connecting a large capacitor to the piezoelectric source.
+The capacitor bank subsequently delivers the stored electrical energy to the propulsion motor in short-duration high-current bursts, enabling periodic oscillation of the robotic tail while supporting a battery-minimized propulsion system.
 
 ---
 
