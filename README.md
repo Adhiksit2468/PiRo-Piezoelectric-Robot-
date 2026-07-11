@@ -578,15 +578,6 @@ This distinction between static pressure and dynamic mechanical deformation repr
 
 ---
 
-# Research Position
-
-PiRo does not propose a new piezoelectric material, actuator, propulsion mechanism, or claim fully battery-free underwater propulsion using current technology.
-
-Rather than attempting to replace conventional batteries, PiRo explores how environmental mechanical energy may reduce net battery energy consumption and contribute toward longer-duration underwater operation 
-and serves as an engineering framework that can evolve alongside future advances in smart materials, power electronics, ultra-low-power underwater robotics, and next-generation energy harvesting technologies.
-
----
-
 ## Status
 
 - Conceptual architecture completed
@@ -619,52 +610,35 @@ The following diagram illustrates the complete energy harvesting workflow employ
 
 # Future Work & Research Directions
 
-The present work establishes the theoretical feasibility and engineering limitations of piezoelectric-assisted underwater propulsion. Future research will focus on improving the overall energy harvesting capability and validating the proposed architecture experimentally.
+The present work establishes the theoretical feasibility and engineering limitations of piezoelectric-assisted underwater propulsion. Future research will focus on validating the proposed architecture experimentally while improving its energy harvesting capability and overall system efficiency.
 
-## Mechanical Design
+## Mechanical & Hydrodynamic Optimization
 
 - Optimize piezoelectric placement at regions of maximum structural strain
 - Investigate flexible composite body materials to amplify mechanical deformation
-- Design compliant internal structures for improved stress transmission
-- Develop modular piezoelectric arrays distributed throughout the robot body
-- Optimize tail geometry for greater energy harvesting during oscillation
+- Develop compliant internal structures for improved stress transmission
+- Optimize tail geometry and body shape for improved hydrodynamic efficiency
+- Perform CFD analysis to investigate flow behaviour and vortex-induced energy harvesting
 
 ---
 
-## Power Electronics
+## Power Management & Energy Storage
 
-- Implement synchronous rectification to reduce diode losses
-- Integrate dedicated piezoelectric energy-harvesting ICs for improved conversion efficiency
+- Implement synchronous rectification to reduce conversion losses
+- Integrate dedicated piezoelectric energy-harvesting ICs
 - Develop adaptive capacitor charging strategies
 - Investigate dynamic capacitor switching architectures
-- Reduce leakage currents and equivalent series resistance (ESR)
-
----
-
-## Energy Storage
-
-- Evaluate different supercapacitor technologies
-- Optimize capacitor bank sizing for propulsion duty cycles
-- Investigate hybrid energy storage architectures combining capacitors and rechargeable micro-batteries
-- Improve charge-discharge management for higher overall system efficiency
+- Reduce leakage current and equivalent series resistance (ESR)
+- Evaluate different supercapacitor technologies and hybrid storage architectures
 
 ---
 
 ## Propulsion System
 
 - Investigate ultra-low-power propulsion motors
-- Evaluate alternative propulsion mechanisms requiring lower instantaneous power
-- Optimize tail oscillation frequency for improved hydrodynamic efficiency
+- Evaluate propulsion mechanisms requiring lower instantaneous power
+- Optimize propulsion duty cycles based on harvested energy availability
 - Minimize startup energy through lightweight drivetrain design
-
----
-
-## Hydrodynamic Optimization
-
-- Perform Computational Fluid Dynamics (CFD) analysis of the robotic body
-- Investigate vortex-induced vibration as an additional energy harvesting mechanism
-- Optimize body geometry to maximize deformation under natural flow conditions
-- Analyze swimming efficiency under different aquatic environments
 
 ---
 
@@ -672,13 +646,13 @@ The present work establishes the theoretical feasibility and engineering limitat
 
 Future prototype development will focus on validating the theoretical analysis presented in this work through controlled laboratory testing.
 
-Planned experimental investigations include:
+Planned investigations include:
 
 - Piezoelectric voltage and current characterization
 - Capacitor charging experiments
 - Energy conversion efficiency measurements
 - Propulsion burst testing
-- Underwater waterproofing validation
+- Waterproofing validation
 - Long-duration endurance testing
 - Flow tank and open-water experiments
 
