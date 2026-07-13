@@ -79,7 +79,7 @@ E = ½ C V²
 The conceptual development of PiRo is informed by existing research in underwater robotics, smart materials, and piezoelectric energy harvesting. The following publications provide useful background for readers interested in the engineering principles explored throughout this project.
 
 1. **Trout-like Multifunctional Piezoelectric Robotic Fish and Energy Harvester**  
-   https://iopscience.iop.org/article/10.1088/1748-3190/abf6f4
+   (https://iopscience.iop.org/article/10.1088/1748-3190/ac011e)
 
 2. **A Review of Robotic Fish Based on Smart Materials**  
    https://www.mdpi.com/2313-7673/8/2/227
